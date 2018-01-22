@@ -10,15 +10,13 @@ public class Bonus : MonoBehaviour
 	{
         rb = GetComponent<Rigidbody2D>();
     }
-    void OnTriggerEnter2D(Collider2D other)
-	{
-		if(other.tag == "Player")
+    void OnCollisionEnter2D(Collision2D other)
+    {
+		if(other.collider.tag == "Player")
 		{
-            other.GetComponent<MiceAgent>().GotBonus();
+            other.collider.GetComponent<MiceAgent>().GotBonus();
         }
 	}
-
-	
 
 	void FixedUpdate()
 	{
@@ -36,6 +34,6 @@ public class Bonus : MonoBehaviour
 	
 	void ImpulseToRandomDirection()
 	{
-        rb.AddForce(new Vector2(Random.value, Random.value) * speed, ForceMode2D.Impulse);
+        rb.AddForce(new Vector2(Random.value*2f-1f, Random.value*2f-1f) * speed, ForceMode2D.Impulse);
 	}
 }

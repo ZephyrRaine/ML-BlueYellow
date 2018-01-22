@@ -174,7 +174,7 @@ Transform:
   m_GameObject: {fileID: 1103121894404374}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children: []
   m_Father: {fileID: 4974053070870426}
   m_RootOrder: 1
@@ -336,10 +336,10 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 5
-  m_LinearDrag: 25
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 46ee1d005cddc744884d92625f2cc0bf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -393,7 +393,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -537,7 +537,7 @@ MonoBehaviour:
   agentStoredAction: []
   memory: []
   id: 0
-  target: {fileID: 114349538217151940}
+  target: {fileID: 50718629375113912}
   area: {fileID: 114469984206733874}
   speed: 70
 --- !u!114 &114349538217151940
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94cf1ac961f13964eb924a6ce677223c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 35
+  speed: 75
 --- !u!114 &114469984206733874
 MonoBehaviour:
   m_ObjectHideFlags: 1

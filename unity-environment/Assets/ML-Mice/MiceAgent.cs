@@ -5,7 +5,7 @@ using UnityEngine;
 public class MiceAgent : Agent 
 {
     Rigidbody2D rb;
-    public Bonus target;
+    public Rigidbody2D target;
     public MiceArea area;
     public float speed;
 
@@ -18,8 +18,10 @@ public class MiceAgent : Agent
         List<float> state = new List<float>();
         state.Add(target.transform.position.x - rb.transform.position.x);
         state.Add(target.transform.position.y - rb.transform.position.y);
-        state.Add(rb.velocity.normalized.x);
-        state.Add(rb.velocity.normalized.y);
+        state.Add(rb.velocity.x);
+        state.Add(rb.velocity.y);
+        state.Add(target.velocity.x);
+        state.Add(target.velocity.y);
         state.Add(speed);
 
         return state;
