@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MiceAgent : Agent 
 {
-    Rigidbody2D rb;
+    protected Rigidbody2D rb;
     public Rigidbody2D target;
     public MiceArea area;
     public float speed;
@@ -15,7 +15,7 @@ public class MiceAgent : Agent
     }
     public override List<float> CollectState()
     {
-        List<float> state = new List<float>();
+        // List<float> state = new List<float>();
         state.Add(target.transform.position.x - rb.transform.position.x);
         state.Add(target.transform.position.y - rb.transform.position.y);
         state.Add(rb.velocity.x);
@@ -57,7 +57,8 @@ public class MiceAgent : Agent
 	public override void AgentReset()
 	{
         area.ResetArea();
-        rb.velocity = rb.velocity*0.5f;
-	}
+        rb.velocity = Vector3.zero;
+        transform.localPosition = Vector2.zero;
+    }
 
 }

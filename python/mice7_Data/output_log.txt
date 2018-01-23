@@ -1,0 +1,182 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940MX (ID=0x179c)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   21.21.13.6909
+Begin MonoManager ReloadAssembly
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\System.Core.dll (this message is harmless)
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\System.Numerics.dll into Unity Child Domain
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\System.ValueTuple.dll into Unity Child Domain
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\TensorFlowSharp.dll into Unity Child Domain
+Loading C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\System.dll (this message is harmless)
+- Completed reload, in  1.488 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 138.176954 ms
+Platform assembly: C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\cleduc\Documents\GitHub\ML-Mice\python\mice7_Data\Managed\System.Data.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3370 -> priority: 1 
+  Thread -> id: 1694 -> priority: 1 
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Agent.OnDisable () [0x00000] in <3d049af19ca8449484052065ae914baa>:0 
+ 
+(Filename: <3d049af19ca8449484052065ae914baa> Line: 0)
+
