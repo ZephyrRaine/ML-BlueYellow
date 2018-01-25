@@ -609,7 +609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brain: {fileID: 0}
   observations: []
-  maxStep: 0
+  maxStep: 10000
   resetOnDone: 1
   state: []
   stackedStates: []
@@ -623,7 +623,7 @@ MonoBehaviour:
   id: 0
   target: {fileID: 50195412975267848}
   area: {fileID: 114469984206733874}
-  speed: 100
+  speed: 75
 --- !u!114 &114349538217151940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -648,6 +648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonus: {fileID: 114777922035902266}
+  agent: {fileID: 114280151658718460}
 --- !u!114 &114626234448606712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -661,7 +662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brain: {fileID: 0}
   observations: []
-  maxStep: 0
+  maxStep: 10000
   resetOnDone: 1
   state: []
   stackedStates: []

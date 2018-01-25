@@ -28,13 +28,6 @@ public class Bonus : MonoBehaviour
       //      ImpulseToRandomDirection();
     }
 
-	public void RandomPosition()
-	{
-        rb.velocity = Vector2.zero;
-        transform.localPosition = new Vector2(
-            Random.Range(3f, 8f) * (Random.value > 0.5f ? 1f : -1f),
-            Random.Range(3f, 8f) * (Random.value > 0.5f ? 1f : -1f));
-	}
 
 	
 	void ImpulseToRandomDirection()

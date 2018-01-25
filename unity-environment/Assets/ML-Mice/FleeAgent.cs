@@ -7,10 +7,7 @@ public class FleeAgent : MiceAgent {
 	public override void AgentStep(float[] act)
 	{
         MoveAgent(act);
-        if(rb.velocity.magnitude < 1f)
-            reward = -0.001f;
-		else
-            reward = 0.001f;
+        reward = 0.001f;
     }
 
 	public void Loose()
@@ -22,6 +19,6 @@ public class FleeAgent : MiceAgent {
 
     public override void AgentReset()
     {
-
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
     }
 }
