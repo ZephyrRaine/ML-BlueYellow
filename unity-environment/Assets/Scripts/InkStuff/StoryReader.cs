@@ -18,9 +18,12 @@ public class StoryReader : MonoBehaviour {
     // bool introDone = false;
 
 
+    AudioSource source;
+    public AudioClip[] voices;
     void Start () 
     {
             ReadKnot("INTRO");
+            source = GetComponent<AudioSource>();
 	}
 
     public void ReadKnot(string knot)
@@ -45,9 +48,31 @@ public class StoryReader : MonoBehaviour {
             }
             else
             {
-                CloseTextBox();
+                RemoveTrigger();
+                // Invoke("RemoveTrigger", 0.1f);
+                //CloseTextBox();
             }
 
+    }
+
+    float timer = 0f;
+    public float sfxDelay = 0.1f;
+    void Update()
+    {
+        if(mainTextBox._isReading)
+        {
+            timer += Time.unscaledDeltaTime;
+            if(timer > sfxDelay)
+            {
+                timer = 0f;
+                if(voices.Length > 0)
+                        source.PlayOneShot(voices[UnityEngine.Random.Range(0, voices.Length)],0.1f);
+            }
+        }
+        else
+        {
+            timer = 0f;
+        }
     }
   
 

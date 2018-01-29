@@ -10,3 +10,4 @@ Don't worry, it's just a game between them.
 {NL}
 {NL}
 <size=60><font="testFont">Click on {BLUE} and try to catch {YELLOW}.</font></size>
+->DONE
