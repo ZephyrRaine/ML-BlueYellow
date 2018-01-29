@@ -12,8 +12,7 @@ public class FleeAgent : MiceAgent {
 
 	public void Loose()
 	{
-        reward = -1f;
-        done = true;
+        reward = -0.1f;
     }
 
 

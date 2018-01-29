@@ -9,29 +9,18 @@ public class Bonus : MonoBehaviour
     public float speed;
     void Start()
 	{
-        fa = GetComponent<FleeAgent>();
+        fa = GetComponentInParent<FleeAgent>();
         rb = GetComponent<Rigidbody2D>();
     }
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
-		if(other.collider.tag == "Player")
+        if(other.tag == "Player")
 		{
+            // Debug.Log("OK3");
             if(fa != null)
                 fa.Loose();
-            other.collider.GetComponent<MiceAgent>().GotBonus();
+            other.GetComponent<MiceAgent>().GotBonus();
         }
 	}
 
-	void FixedUpdate()
-	{
-	//	if(rb.velocity.magnitude < 5f)
-      //      ImpulseToRandomDirection();
-    }
-
-
-	
-	void ImpulseToRandomDirection()
-	{
-        rb.AddForce(new Vector2(Random.value*2f-1f, Random.value*2f-1f) * speed, ForceMode2D.Impulse);
-	}
 }

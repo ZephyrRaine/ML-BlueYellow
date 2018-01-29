@@ -6,7 +6,7 @@ public class MiceAgent : Agent
 {
     protected Rigidbody2D rb;
     public Rigidbody2D target;
-    public MiceArea area;
+    public MLarea area;
     public float speed;
 
     public override void InitializeAgent()
@@ -16,15 +16,12 @@ public class MiceAgent : Agent
     public override List<float> CollectState()
     {
         // List<float> state = new List<float>();
-        state.Add(target.transform.localPosition.x);
-        state.Add(transform.localPosition.x);
-        state.Add(target.transform.localPosition.y);
-        state.Add(transform.localPosition.y);
+        state.Add(target.transform.localPosition.x - transform.localPosition.x);
+        state.Add(target.transform.localPosition.y - transform.localPosition.y);
         state.Add(rb.velocity.x);
         state.Add(rb.velocity.y);
         state.Add(target.velocity.x);
         state.Add(target.velocity.y);
-
         return state;
 	}
       Vector2 direction;
@@ -40,25 +37,28 @@ public class MiceAgent : Agent
         direction = new Vector2(directionX, directionY);
         direction.Normalize();
         rb.AddRelativeForce(direction * speed);
-        transform.GetChild(0).rotation.SetLookRotation(transform.position + new Vector3(direction.x, direction.y), Vector3.up);
     }
 
 	public override void AgentStep(float[] act)
 	{
         MoveAgent(act);
         reward = -0.001f;
+
     }
 
 	public void GotBonus()
 	{
+        reward = 0.01f;
+        if(CumulativeReward >= 1f)
+            done = true;
+    }
+
+    public void BasicBonus()
+    {
         reward = 1f;
         done = true;
     }
 
-    void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(transform.position + new Vector3(direction.x, direction.y), 1);
-    }
 
 	public override void AgentReset()
 	{
