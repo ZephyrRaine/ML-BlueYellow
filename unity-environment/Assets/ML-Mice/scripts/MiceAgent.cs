@@ -69,7 +69,7 @@ public class MiceAgent : Agent
             MoveAgent(act);
         }
         
-        reward = -0.001f;
+        reward = -0.0001f;
     }
 
 	public void GotBonus()
