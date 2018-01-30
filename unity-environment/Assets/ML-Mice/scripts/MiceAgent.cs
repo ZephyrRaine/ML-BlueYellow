@@ -68,15 +68,12 @@ public class MiceAgent : Agent
         {
             MoveAgent(act);
         }
-        
-        reward = -0.0001f;
+        StepReward();
     }
 
-	public void GotBonus()
-	{
-        reward = 0.01f;
-        if(CumulativeReward >= 1f)
-            done = true;
+    public virtual void StepReward()
+    {
+        reward = -0.0001f;
     }
 
     public void BasicBonus()

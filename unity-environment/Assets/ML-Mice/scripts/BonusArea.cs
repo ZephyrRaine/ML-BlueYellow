@@ -41,8 +41,11 @@ public class BonusArea : MLarea {
         if(pb != null)
             pb.Clear();
 
-        bonus.transform.localScale = Vector2.one * academy.bonusSize;
-        bonus.GetComponent<BasicBonus>().speed = academy.speed;
+        if(academy != null)
+        {
+            bonus.transform.localScale = Vector2.one * academy.bonusSize;
+            bonus.GetComponent<BasicBonus>().speed = academy.speed;
+        }
     }
 	
 }

@@ -15,8 +15,11 @@ EditorBuildSettings:
     path: Assets/ML-Agents/Examples/Tennis/Tennis.unity
     guid: 25c0c9e81e55c4e129e1a5c0ac254100
   - enabled: 0
-    path: Assets/ML-Mice/game.unity
+    path: Assets/ML-Mice/scene/game.unity
     guid: d19a9d5a36d4613448572e68bc2eee31
-  - enabled: 1
-    path: Assets/ML-Mice/basicBonus.unity
+  - enabled: 0
+    path: Assets/ML-Mice/scene/basicBonus.unity
     guid: 6f631ec843568904d956d4e614b6e29e
+  - enabled: 1
+    path: Assets/ML-Mice/scene/basicFlee.unity
+    guid: 038e810ebc5de7b45be2abe66e807932

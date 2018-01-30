@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FleeAgent : MiceAgent {
-
-	public override void AgentStep(float[] act)
-	{
-        MoveAgent(act);
-        reward = 0.001f;
+public class FleeAgent : MiceAgent 
+{
+    public override void StepReward()
+    { 
+        reward = 0.0001f;
     }
+
 
 	public void Loose()
 	{
-        reward = -0.1f;
+        reward = -1f;
+        done = true;
     }
 
 

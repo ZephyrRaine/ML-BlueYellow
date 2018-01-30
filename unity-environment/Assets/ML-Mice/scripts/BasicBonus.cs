@@ -9,12 +9,13 @@ public class BasicBonus : MonoBehaviour {
 
     public Rigidbody2D agent;
     AudioSource source;
-
+    FleeAgent fa;
     public System.Action Done;
     void Start()
 	{
         source = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
+        fa = GetComponent<FleeAgent>();
     }
     // Use this for initialization
 
@@ -22,7 +23,11 @@ public class BasicBonus : MonoBehaviour {
     {
         if(other.collider.tag == "Player")
 		{
+
+            if(fa != null)
+                fa.Loose();
             other.collider.GetComponent<MiceAgent>().BasicBonus();
+            
             if(source != null)
                 source.Play();
             if(Done != null)
@@ -34,31 +39,34 @@ public class BasicBonus : MonoBehaviour {
     {
         // if(rb.velocity.magnitude < 5f)
 			// ImpulseToRandomDirection();
-        Vector2 targetOffset = transform.position - agent.transform.position;
+            if(speed != 0f)
+            {
+                Vector2 targetOffset = transform.position - agent.transform.position;
 
-        Vector2 m_desiredFleeVelocity = targetOffset;
-	    m_desiredFleeVelocity.Normalize();
-	    
+                Vector2 m_desiredFleeVelocity = targetOffset;
+                m_desiredFleeVelocity.Normalize();
+                
 
-        float fT = Mathf.Min(3f, targetOffset.magnitude);
-        Vector2 prediction = (Vector2)agent.transform.position + (Vector2)agent.velocity * fT;
-        Vector2 m_desiredVelocity = (Vector2)transform.position - prediction;
-        m_desiredVelocity.Normalize();
+                float fT = Mathf.Min(3f, targetOffset.magnitude);
+                Vector2 prediction = (Vector2)agent.transform.position + (Vector2)agent.velocity * fT;
+                Vector2 m_desiredVelocity = (Vector2)transform.position - prediction;
+                m_desiredVelocity.Normalize();
 
 
-        float dist = Vector2.Distance((Vector2)agent.transform.position, (Vector2)transform.position);
-        if(dist > 5.0f)
-        {
-            m_desiredVelocity *= 0.75f;
-            m_desiredFleeVelocity *= 0.25f;
-        }
-        else
-        {
-            m_desiredVelocity *= 0.0f;
-            m_desiredFleeVelocity *= 1.0f;
-        }
+                float dist = Vector2.Distance((Vector2)agent.transform.position, (Vector2)transform.position);
+                if(dist > 5.0f)
+                {
+                    m_desiredVelocity *= 0.75f;
+                    m_desiredFleeVelocity *= 0.25f;
+                }
+                else
+                {
+                    m_desiredVelocity *= 0.0f;
+                    m_desiredFleeVelocity *= 1.0f;
+                }
 
-        rb.AddForce((m_desiredVelocity+m_desiredFleeVelocity)*speed);
+                rb.AddForce((m_desiredVelocity+m_desiredFleeVelocity)*speed);
+            }
     }
 
 
