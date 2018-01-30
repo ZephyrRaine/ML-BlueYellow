@@ -50,7 +50,7 @@ public class MiceAgent : Agent
     }
 
 
-
+    public bool canMove = true;
     public void TakeControl(bool b)
     {
         isAiControlled = !b;
@@ -62,10 +62,14 @@ public class MiceAgent : Agent
         {
             act[0] = Input.GetAxis("Horizontal");
             act[1] = Input.GetAxis("Vertical");
+            MoveAgent(act);
         }
-        MoveAgent(act);
+        else if(canMove)
+        {
+            MoveAgent(act);
+        }
+        
         reward = -0.001f;
-
     }
 
 	public void GotBonus()

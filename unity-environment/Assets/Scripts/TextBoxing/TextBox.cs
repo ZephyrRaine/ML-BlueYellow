@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -138,6 +139,13 @@ public class TextBox : TextMeshBox
         // --------
 
         textLengthFor = textLengths.ToArray();
+    }
+
+    public void Clear()
+    {
+        _textComponent.text = "";
+        _currentIndex = 0;
+        _currentString = "";
     }
 
     void Start()

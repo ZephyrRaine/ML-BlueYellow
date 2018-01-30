@@ -82,12 +82,17 @@ public class TextMeshBox : MonoBehaviour
 
     internal void DisplayImmediate()
     {
+        Debug.Log("DisplayImmediate");
         if (_textComponent != null)
         {
             _textComponent.text = _currentString;
             _isReading = false;
             if (finishedCallback != null)
+            {
+
+                 Debug.Log("FinishedCallback");
                 finishedCallback.Invoke();
+            }      
         }
     }
 

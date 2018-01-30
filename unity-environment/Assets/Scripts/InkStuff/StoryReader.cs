@@ -17,17 +17,25 @@ public class StoryReader : MonoBehaviour {
     // [SerializeField]
     // bool introDone = false;
 
-
+    public TextMeshBox.SimpleCallback finished;
     AudioSource source;
     public AudioClip[] voices;
     void Start () 
     {
             ReadKnot("INTRO");
             source = GetComponent<AudioSource>();
-	}
+        mainTextBox.finishedCallback += finishedLine;
+    }
+
+    public void finishedLine()
+    {
+        if(finished != null)
+            finished();
+    }
 
     public void ReadKnot(string knot)
     {
+        mainTextBox.Clear();
         InkOverlord.IO.RequestKnot(knot);
         clickCatcher.SetActive(true);
         mainTextBox.transform.parent.gameObject.SetActive(true);
@@ -77,7 +85,7 @@ public class StoryReader : MonoBehaviour {
   
 
 
-    void CloseTextBox()
+    public void CloseTextBox()
     {
         Invoke("RemoveTrigger", 0.1f);
         mainTextBox.transform.parent.gameObject.SetActive(false);

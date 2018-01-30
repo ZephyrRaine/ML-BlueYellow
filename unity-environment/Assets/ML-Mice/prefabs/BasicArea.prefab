@@ -157,7 +157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1666784333447886
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +478,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 3
-  m_LinearDrag: 0.05
+  m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 46ee1d005cddc744884d92625f2cc0bf, type: 2}
@@ -830,6 +830,7 @@ MonoBehaviour:
   target: {fileID: 50700305060050822}
   area: {fileID: 114616699029366300}
   speed: 100
+  canMove: 1
 --- !u!114 &114616699029366300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -841,6 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83281a7538ae99c4ca90c30f1a8892fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GiveVelocity: 1
 --- !u!114 &114639807643816600
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,3 +11,13 @@ Don't worry, it's just a game between them.
 {NL}
 <size=60><font="testFont">Click on {BLUE} and try to catch {YELLOW}.</font></size>
 ->DONE
+
+===STEP0===
+Well done.
+Now let's see how {BLUE} do on its own.
+->DONE
+
+===STEP1===
+Fairly easy, right?
+But what if {YELLOW} try to flee from {BLUE}?
+->DONE

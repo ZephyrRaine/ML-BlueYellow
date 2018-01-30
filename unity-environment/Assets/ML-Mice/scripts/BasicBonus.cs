@@ -9,6 +9,8 @@ public class BasicBonus : MonoBehaviour {
 
     public Rigidbody2D agent;
     AudioSource source;
+
+    public System.Action Done;
     void Start()
 	{
         source = GetComponent<AudioSource>();
@@ -23,6 +25,8 @@ public class BasicBonus : MonoBehaviour {
             other.collider.GetComponent<MiceAgent>().BasicBonus();
             if(source != null)
                 source.Play();
+            if(Done != null)
+                Done();
         }
 	}
 
