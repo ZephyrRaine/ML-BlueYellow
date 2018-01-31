@@ -1,4 +1,8 @@
-# ML-Mice
+# ML-BlueYellow
+
+# This repository is a two weeks playfield who has seen different branches of ml-agents.
+# There's a lot of legacy code and scripts that need to be rewritten.
+# Consider coming back in a week or so :) 
 
 Rewards:
 
